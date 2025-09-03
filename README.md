@@ -6,7 +6,7 @@
 
 - Created - 2025-09-03
 
-- Technologies Used - TailwindCSS , LocalStorage , Axios , React , Redux
+- Technologies Used - TailwindCSS , LocalStorage , Axios , MUI , React , Redux
 
 - Role - Frontend
 
