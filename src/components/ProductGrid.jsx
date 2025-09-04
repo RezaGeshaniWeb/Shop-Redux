@@ -51,7 +51,7 @@ function ProductGrid({
                             <button
                                 onClick={() => addToCartHandler(item)}
                                 disabled={isDisabled}
-                                className={`mt-4 w-full py-2 rounded-lg text-white font-medium transition-colors ${isDisabled
+                                className={`cursor-pointer select-none mt-4 w-full py-2 rounded-lg text-white font-medium transition-colors ${isDisabled
                                     ? "bg-gray-400 cursor-not-allowed"
                                     : "bg-indigo-600 hover:bg-indigo-700"
                                     }`}
@@ -65,7 +65,7 @@ function ProductGrid({
                                         onClick={() =>
                                             dispatch(removeItemFromCart(item.id))
                                         }
-                                        className="px-3 py-1 border border-gray-300 rounded-full hover:bg-gray-100 transition"
+                                        className="cursor-pointer px-3 py-1 border border-gray-300 rounded-full hover:bg-gray-100 transition"
                                     >
                                         –
                                     </button>
@@ -74,7 +74,7 @@ function ProductGrid({
                                     </span>
                                     <button
                                         onClick={() => dispatch(addItemToCart(item))}
-                                        className="px-3 py-1 border border-gray-300 rounded-full hover:bg-gray-100 transition"
+                                        className="cursor-pointer px-3 py-1 border border-gray-300 rounded-full hover:bg-gray-100 transition"
                                     >
                                         +
                                     </button>
