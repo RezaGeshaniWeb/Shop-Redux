@@ -12,7 +12,7 @@ function HomePageLayout({ children }) {
                     <h1 className="text-2xl font-extrabold">Shop</h1>
                     <Link
                         to={`/checkout`}
-                        className="flex items-center space-x-2 hover:underline"
+                        className="flex items-center space-x-1 hover:underline"
                     >
                         <svg
                             className="w-6 h-6 text-white"
@@ -27,7 +27,7 @@ function HomePageLayout({ children }) {
                                 d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.2 6m0 0H17m-9.2 0L5 5"
                             />
                         </svg>
-                        <span>shopping cart ({cart.totalQuantity})</span>
+                        <span className="text-lg -translate-0.5">({cart.totalQuantity})</span>
                     </Link>
                 </div>
             </header>
